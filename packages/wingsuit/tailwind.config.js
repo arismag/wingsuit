@@ -16,6 +16,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      margin: {
+        ...rem(-100),
+      },
       fill: {
         current: 'currentColor',
       },
@@ -43,6 +46,7 @@ module.exports = {
   variants: {
     opacity: ['responsive'],
     borderWidth: ['responsive', 'hover', 'group-hover'],
+    borderColor: ['responsive', 'first'],
     backgroundColor: ['responsive', 'hover', 'group-hover'],
     textDecoration: ['responsive', 'hover', 'group-hover'],
     textColor: ['responsive', 'hover', 'group-hover'],

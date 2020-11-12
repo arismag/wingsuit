@@ -1,3 +1,4 @@
+import './index';
 const patternDefinition = require('./menu.wingsuit.yml');
 
 export const wingsuit = {
