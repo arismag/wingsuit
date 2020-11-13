@@ -12,11 +12,6 @@
   'flex',
 ]) | sort | join(' ') | trim %}
 
-{% set link_classes = ([
-  alignment == 'center'?'mx-auto': '',
-  'text-indigo-500', 'inline-flex', 'md:mb-2', 'lg:mb-0',
-]) | sort | join(' ') | trim %}
-
 {% set classes = ([
   alignment == 'center' ? 'text-center rounded': '',
   bg_color == 'gray' ? 'bg-gray-200',
@@ -48,11 +43,6 @@
       <div class="leading-relaxed mb-3">
         {% block text %}
           {{ text }}
-        {% endblock %}
-      </div>
-      <div class="{{ link_classes }}">
-        {% block link %}
-          {{ link }}
         {% endblock %}
       </div>
     </div>
