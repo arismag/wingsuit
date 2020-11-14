@@ -1,5 +1,5 @@
+import path from 'path';
 import AppConfig from '../../AppConfig';
-import path from "path";
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -7,7 +7,6 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const glob = require('glob');
 
 export function webpack(appConfig: AppConfig) {
-
   const scssItems = glob.sync(`${appConfig.absDesignSystemPath}/**/*.scss`);
 
   const scssEntries = scssItems.reduce((acc, item) => {
@@ -106,4 +105,3 @@ export function webpack(appConfig: AppConfig) {
   };
   return cssModes[appConfig.cssMode];
 }
-
