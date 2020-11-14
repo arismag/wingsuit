@@ -1,6 +1,7 @@
 import AppConfig from '../AppConfig'
 
 const css = require('../server/presets/css')
+const scss = require('../server/presets/scss')
 const babel = require('../server/presets/babel')
 const assets = require('../server/presets/assets')
 const storybook = require('../server/presets/storybook')
@@ -20,6 +21,7 @@ export const wingsuit = {
 
   presets: {
     css,
+    scss,
     babel,
     assets,
     assetsVideos,
