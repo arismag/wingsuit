@@ -52,6 +52,7 @@ module.exports = {
     textColor: ['responsive', 'hover', 'group-hover'],
     fontFamily: ['responsive', 'hover', 'focus'],
     fill: ['responsive', 'hover', 'focus'],
+    spacing: ['responsive', 'last'],
   },
   plugins: [customForms, typography],
 };
