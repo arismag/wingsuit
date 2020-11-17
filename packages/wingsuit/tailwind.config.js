@@ -53,6 +53,7 @@ module.exports = {
     fontFamily: ['responsive', 'hover', 'focus'],
     fill: ['responsive', 'hover', 'focus'],
     spacing: ['responsive', 'last'],
+    display: ['responsive', 'hover', 'focus', 'group-hover'],
   },
   plugins: [customForms, typography],
 };
